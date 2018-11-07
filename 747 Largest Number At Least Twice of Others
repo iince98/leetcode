@@ -1,0 +1,14 @@
+mylist=input ("Enter your array list with space:")
+int_list=[]
+result=-1
+
+mylist1= list (mylist.split(" "))
+
+for x in mylist1:
+    int_list.append(int(x))
+
+if (sorted(int_list)[len(int_list)-1]) / int((sorted(int_list)[len(int_list)-2])) >=2:
+    result=1
+    
+print(sorted(int_list))
+print (result)
