@@ -1,0 +1,14 @@
+mylist=input ("Enter your array list with space:")
+target=input ("Enter your target number:")
+
+mylist1=list (mylist.split(" "))
+first_indice=0
+second_indice=0
+
+for x in range (len(mylist1)):
+    for y in range (len(mylist1)):
+        if int (mylist1[x]) + int (mylist1[y]) == int(target):
+            first_indice= x
+            second_indice= y
+
+print ("First indice is: {} and second indice is: {}".format (str(second_indice), str(first_indice)))
