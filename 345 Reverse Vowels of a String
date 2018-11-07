@@ -1,0 +1,24 @@
+my_string =input ("Enter your string: ")
+string_letters= list (my_string)
+vowel_index=[]
+vowel_reverse=[]
+converted_list=[]
+counter=0;
+
+for x in string_letters:
+    if x in "aeiouAEIOU":
+        vowel_index.append(x)
+        
+vowel_reverse=vowel_index[::-1]
+        
+for x in string_letters:
+    if x in "aeiouAEIOU":
+        converted_list.append(vowel_reverse[counter])
+        counter+=1
+    else:
+        converted_list.append(x)
+        
+print(string_letters)
+print(vowel_index)
+print (vowel_reverse)
+print (converted_list)
