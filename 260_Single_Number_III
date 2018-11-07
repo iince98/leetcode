@@ -1,0 +1,16 @@
+mylist=input ("Enter your array list with space:")
+only_one_list=[]
+counter=0
+
+mylist1=list (mylist.split(" "))
+
+for x in mylist1:
+    counter=0
+    for y in mylist1:
+        if (x==y):
+            counter+=1
+    if counter<2:
+        only_one_list.append(x)
+        
+
+print (only_one_list)
