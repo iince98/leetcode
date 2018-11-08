@@ -1,0 +1,17 @@
+mylist=input ("Enter your array list with space:")
+only_twice_list=[]
+counter=0
+
+mylist1=list (mylist.split(" "))
+l= len(mylist1)
+
+for x in range(l):
+    counter=0
+    for y in range (x, l, 1):
+        if (mylist1[x]==mylist1[y]):
+            counter+=1
+   
+    if counter==2:
+        only_twice_list.append(mylist1[x])
+        
+print (only_twice_list)
