@@ -1,3 +1,4 @@
+#getting the inputs
 mylist=input ("Enter your array list with space:")
 target=input ("Enter your target number:")
 
